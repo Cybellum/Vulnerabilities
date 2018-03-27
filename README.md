@@ -1,6 +1,6 @@
-# Vulnerabilities <img src="https://avatars1.githubusercontent.com/u/26359359?s=200&v=4" width="40" height="40"/>
+<img src="https://image.ibb.co/gPt3Kn/small_dark_logo.png"/>
 
-
+# Vulnerabilities 
 
 This repository contains some of the vulnerabilities that were found by our automatic vulnerability detection platform.
 
