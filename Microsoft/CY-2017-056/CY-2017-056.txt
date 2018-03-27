@@ -1,0 +1,7 @@
+﻿CY-2017-056
+Vulnerability Type: Memory Corruption
+Product & Version: Internet Explorer 11.64. 16299.0	
+Module & Version: mshtml.dll.dll version 11.00.16299.64 
+Tested OS: Windows 10
+Reproduction: 
+• Open crash.html

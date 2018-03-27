@@ -1,0 +1,7 @@
+﻿CY-2017-031
+Vulnerability Type: Type Conversion (Signed Conversion)
+Product & Version: Microsoft Edge 41.16299.15.0
+Module & Version: EdgeHTML.dll version 11.00.16299.64
+Tested OS: Windows 10
+Reproduction: 
+• Open crash.html

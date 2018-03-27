@@ -1,0 +1,24 @@
+﻿CY-2017-063
+Vulnerability Type: Memory Corruption
+Product & Version: Excel 2016 MSO Version 1711 (Build 8730.2127) – 32bit
+                                    F12 debugger Version 11.0.16299.15 – 32 bit
+                                    Internet Explorer Version 11.125.16299.0  
+Module & Version: jscript9.dll version 11.00.16299.125	
+Tested OS: Windows 10
+Reproduction: 
+• Deploy excel add-In using these steps:
+	• Deploy the crash.html and the crash.js on a local web-sever in the root folder and run the server
+		• The http://localhost/crash.html should be loaded correctly
+	• Put the crash_manifest.xml file inside a shared folder
+	• Add the shared folder in the Trusted Add-in catalogue by executing these steps:
+		• Open word
+		• Go to File->Options->Trust Center->Trusted Add-in Catalogues
+		• Add the shared folder in the Catalog Url and tick the “Show In Menu” option
+		• Restart Word
+• Launch the add – in by going to Home->My Add-ins->Shared Folder->Crash application
+• Wait until the “Ready” message will appear:
+• Open the F12 debugger (32-bit version) and connect to the application
+• Push the “Crash” button in the application
+• Excel should crash
+Remark:
+The crash is reproduced in 90% of the cases, so try to run steps several times until the crash

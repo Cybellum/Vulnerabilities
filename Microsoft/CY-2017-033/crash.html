@@ -1,0 +1,23 @@
+<html>
+   <head>
+      <style>
+         *,
+         .classDummy {
+         -webkit-column-count: 999;
+         }
+      </style>
+      <script>
+         function replaceFunc() {
+             clipPathObj.replaceChild(circleObj, clipPathObj.childNodes[0]);
+         }
+      </script>
+   </head>
+   <body onload=replaceFunc()>
+      <shadow>1</shadow>
+      <svg>
+         <clipPath id="clipPathObj"  ></clipPath>
+         <line marker-end="url(#clipPathObj)" />
+         <circle id="circleObj" cx="76%" ></circle>
+      </svg>
+   </body>
+</html>

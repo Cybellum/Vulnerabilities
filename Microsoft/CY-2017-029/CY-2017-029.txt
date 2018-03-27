@@ -1,0 +1,17 @@
+﻿CY-2017-029
+Vulnerability Type: Null Dereference
+Product & Version: Word 2016 MSO (16.0.8528.2126) 32-bit, Version 1709 (Build 8528.2139 Click-to-Run)
+Module & Version: wwlib.dll 16.0.8528.2139 (32-bit)
+Tested OS: Windows 10
+Reproduction: 
+• Deploy word add-In using these steps:
+	• Deploy the crash.html and the crash.js on a local web-sever in the root folder and run the server
+		• The http://localhost/crash.html should be loaded correctly
+	• Put the CrashManifest.xml file inside a shared folder
+	• Add the shared folder in the Trusted Add-in catalogue by executing these steps:
+		• Open word
+		• Go to File->Options->Trust Center->Trusted Add-in Catalogues
+		• Add the shared folder in the Catalog Url and tick the "Show In Menu" option
+		• Restart Word
+• Launch the add – in by going to Home->My Add-ins->Shared Folder->Crash application
+• Word should crash

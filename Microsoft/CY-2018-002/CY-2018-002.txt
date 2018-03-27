@@ -1,0 +1,9 @@
+﻿CY-2018-002
+Vulnerability Type: Heap Overflow
+Product & Version: Excel 2016
+Module & Version: Excel.exe 16.0.8730.2127
+Tested OS: Windows 10
+Reproduction: 
+• Enable gflags.exe by gflags.exe /p /enable excel.exe
+• Open Crash.xls
+• Change to review ribbon tab

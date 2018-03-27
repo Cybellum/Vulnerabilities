@@ -1,0 +1,10 @@
+﻿CY-2017-012
+Vulnerability Type: Out-Of-Bounds Memory Access
+Product & Version: comdlg32.dll 10.0.14393.479
+Tested OS: Windows 10
+Reproduction: 
+• Compile and run main.c
+• "Save as" window will pop up
+• Inside the window, Create in the current directory a file named "z"
+• In the "Save as" line insert "z" and press the "Save" button
+• This will show you the "Confirmation" window, which will show the actual overflowed heap in the window

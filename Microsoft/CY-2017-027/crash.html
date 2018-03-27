@@ -1,0 +1,13 @@
+<html>
+<script>
+	function crash() {
+	var varStrong = document.createElement("blabla");
+	varStrong.webkitRequestFullScreen(); 
+	}
+</script>
+<body>
+	<button>
+		<select onfocusout="crash()" ></select>
+	</button>
+</body>
+</html>

@@ -1,0 +1,10 @@
+﻿CY-2018-016
+Vulnerability Type:
+Product & Version: Office Professional Plus 2016 – Version 1711 Build 8730.2127
+Module & Version: wwlib.dll 16.0.8730.2113
+Tested OS: Windows 10
+Reproduction: 
+• Turn on gflags by: Gflags.exe /p /enable winword.exe
+• Open winword.exe from windbg
+• Put the following breakpoint: bu wwlib+20E5AE
+• Restart word with the above breakpoint, and see the comparison with the uninitialized heap magic

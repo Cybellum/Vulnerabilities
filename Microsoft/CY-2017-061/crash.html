@@ -1,0 +1,26 @@
+<html>
+   <head>
+      <style>
+         .classDummy { display: inline-grid;  }
+      </style>
+      <script>
+         function trackOnError() {
+         	var firstChild = document.body.firstChild;
+         	var rangePoint = document.caretRangeFromPoint(1,1);
+         	rangePoint.insertNode(firstChild);
+         	tableObj.deleteCaption();
+         }
+      </script>
+   <body>
+      <pattern>
+         <discard/>
+      </pattern>
+      <video>
+         <track default="dummy" onerror="trackOnError()" ></track>
+      </video>
+      <li class="classDummy">
+         <table id="tableObj"/>
+         <caption />
+   </body>
+   </head>
+</html>

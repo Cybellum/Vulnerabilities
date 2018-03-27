@@ -1,0 +1,7 @@
+﻿CY-2017-026
+Vulnerability Type: Null Dereference
+Product & Version: Microsoft Edge 40.15063.674.0 x64
+Module & Version: EdgeHTML.dll version 11.00.15063.674
+Tested OS: Windows 10
+Reproduction: 
+• Open crash.html

@@ -1,0 +1,11 @@
+﻿CY-2017-012
+Vulnerability Type: Out-Of-Bounds Memory Access
+Product & Version: Microsoft XML Core Services 8.110.14393.953
+Module & Version: msxml3.dll 8.110.14393.953
+Tested OS: Windows 10
+Reproduction: 
+Note: The vulnerability occures in msxml3.dll, but in order to reproduce and see it, we use Foxit Reader v8.3.2.25013
+• Open FoxitReader.exe with windbg.exe
+• Put a breakpoint on msxml3+5F3DF
+• Run until the breakpoint hit, and see the out of the bound read when the current block belongs to the native WinAPI heap
+

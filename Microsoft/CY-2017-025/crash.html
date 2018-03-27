@@ -1,0 +1,10 @@
+<html>
+<body>
+	<script>
+		var td = document.createElement("td");
+		var xpath = new XPathEvaluator();
+		var expression = xpath.createExpression("//t", null);
+		expression.evaluate(td,XPathResult.STRING_TYPE, null);
+	</script>
+</body>
+</html>

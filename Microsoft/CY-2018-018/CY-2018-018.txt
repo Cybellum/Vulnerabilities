@@ -1,0 +1,10 @@
+﻿CY-2018-018
+Vulnerability Type: Uninitialized Heap Access
+Product & Version: Office Professional Plus 2016 – Version 1711 Build 8730.2127
+Module & Version: Mso40UIwin32client.dll 16.0.8730.2127
+Tested OS: Windows 10
+Reproduction: 
+• Turn on gflags by: Gflags.exe /p /enable winword.exe
+• Open winword.exe from windbg
+• Put the following breakpoint: bu Mso40UIwin32client+15C97F
+• Restart word with the above breakpoint, and see the comparison with the uninitialized heap magic (0xc0c0c0c0)

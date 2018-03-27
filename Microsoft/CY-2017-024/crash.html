@@ -1,0 +1,13 @@
+<html>
+<body>
+	<script>
+		var elements = {};
+		elements['Element'] = document.body.childNodes[0]
+		document.execCommand('selectAll');
+		var varSelection = window.getSelection();
+		varSelection.deleteFromDocument();
+		var varXpath = new XPathEvaluator(); 
+		varXpath.evaluate("//isindex",elements['Element'],null,10,null);
+	</script>
+</body>
+</html>

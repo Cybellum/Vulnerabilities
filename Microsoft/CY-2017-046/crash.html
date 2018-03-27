@@ -1,0 +1,16 @@
+<html>
+   <head>
+      <script>
+         function linkLoad() {
+          var url = new URL("http://dummy"); 
+          var href = linkObj.href; 
+          url.host = href; 
+          var origin = url.origin; 
+         }
+      </script>
+   <body onload = linkLoad();>
+      <svg>
+      <a id="linkObj" />
+   </body>
+   </head>
+</html>

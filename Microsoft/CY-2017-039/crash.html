@@ -1,0 +1,11 @@
+<html>
+   <script>
+      function execute() {
+      var data = document.createElement("data");
+      document.execCommand("unlink", true);
+      data.appendChild(document.elementFromPoint(0,0)); 
+      document.execCommand("selectAll", false); 
+      }
+   </script>
+   <body onload = execute()></body>
+</html>
